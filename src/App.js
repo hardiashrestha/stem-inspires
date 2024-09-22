@@ -41,18 +41,21 @@ const App = () => {
                     variants={pageVariants}
                     transition={{ duration: 0.6 }}
                 >
-                    <Routes location={location}>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/about-us" element={<AboutUs />} />
-                        <Route path="/join-us" element={<JoinUs />} />
-                        <Route path="/events" element={<Events />} />
-                        <Route path="/contact" element={<Contact />} />
-                        <Route path="/projects" element={<Projects />} />
-                        <Route path="/donate" element={<Donate />} />
-                    </Routes>
+                    <main>
+                        <Routes location={location}>
+                            <Route path="/" element={<Home />} />
+                            <Route path="/about-us" element={<AboutUs />} />
+                            <Route path="/join-us" element={<JoinUs />} />
+                            <Route path="/events" element={<Events />} />
+                            <Route path="/contact" element={<Contact />} />
+                            <Route path="/projects" element={<Projects />} />
+                            <Route path="/donate" element={<Donate />} />
+                        </Routes>
+                    </main>
                 </motion.div>
             </AnimatePresence>
-            <Footer />
+            {/* Conditionally render the Footer */}
+            {location.pathname !== '/contact' && <Footer />}
         </>
     );
 };

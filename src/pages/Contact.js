@@ -51,11 +51,11 @@ const Contact = () => {
       <div className="contact-info">
         <h1>Contact Us</h1>
         <p>
-          E-mail: <a href="mailto:bookhubtindia@gmail.com">stem-inspires@gmail.com</a>
+          E-mail: <a href="mailto:steminspires.volunteer@gmail.com">stem-inspires@gmail.com</a>
         </p>
         <p>
-          Instagram: <a href="https://instagram.com/bookk_hubbb">@stem_inspires</a><br />
-          Facebook: <a href="https://facebook.com/BookHub">STEM-Inspires</a>
+          Instagram: <a href="https://www.instagram.com/stem.inspires">@stem_inspires</a><br />
+          Facebook: <a href="https://facebook.com/">STEM-Inspires</a>
         </p>
       </div>
       <div className="contact-form-container">
