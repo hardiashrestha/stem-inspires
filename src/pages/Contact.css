@@ -1,0 +1,121 @@
+body {
+    overflow: hidden;
+}
+
+/* Container for the whole contact page */
+.contact-container {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 0; /* Remove outer margin */
+    height: 100vh; /* Use viewport height for full height */
+    overflow: hidden; /* Prevent unwanted scrolling */
+}
+
+/* Contact Info styling */
+.contact-info {
+    max-width: 200px;
+    margin-right: 20px;
+    /* Center the contact info by adding a left margin */
+    margin-left: auto;
+}
+
+/* Center align the contact info heading */
+.contact-info h1 {
+    font-size: 32px;
+    color: #343A40;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}
+
+/* Right side form */
+.contact-form-container {
+    background-color: rgba(128, 128, 128, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 450px;
+    flex-grow: 1;
+    /* Center the form container */
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+.contact-form h3 {
+    font-family: Arial, sans-serif;
+    color: #343A40;
+    margin-bottom: 10px;
+}
+
+/* Adjust padding on the form container if needed */
+.contact-form-container {
+    padding-top: 10px;
+}
+
+/* Form Group */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+.form-group label {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 8px;
+    font-family: Arial, sans-serif;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: #FCF6E8;
+    color: #F1FAEE;
+    font-size: 14px;
+}
+
+.form-group input {
+    height: 35px;
+}
+
+.form-group textarea {
+    height: 80px;
+}
+
+.submit-button {
+    background-color: #F4A261;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    font-family: 'Times New Roman', serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #F4A261;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        height: auto;
+    }
+
+    .contact-info,
+    .contact-form-container {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 15px;
+    }
+}

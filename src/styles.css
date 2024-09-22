@@ -1,42 +1,53 @@
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
+  margin: 0; 
   padding: 0;
+  background-color: #FCF6E8; 
+  font-family: Arial, sans-serif; 
 }
+
 
 .navbar {
-  background-color: #1D3557;
-  color: #FFFFFF;
-  padding: 10px 20px;
-}
-
-.nav-links {
-  list-style: none;
+  width: 1280px;
+  height: 109px;
+  background-color: #FCF6E8;
   display: flex;
+  align-items: center;
+  position: relative; 
+  margin: 0 auto; 
+  border-bottom: 3px solid #1a1817; 
 }
 
-.nav-links li {
-  margin-right: 20px;
-}
-
-.nav-links a {
-  color: #FFFFFF;
-  text-decoration: none;
-}
-
-.nav-links a:hover {
-  color: #457B9D;
-}
-
-.cta-button {
+.button {
+  width: 95px;
+  height: 50px;
   background-color: #F4A261;
-  padding: 10px 15px;
-  border-radius: 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  position: absolute;
 }
 
-.footer {
-  background-color: #1D3557;
-  color: #FFFFFF;
-  text-align: center;
-  padding: 10px 0;
+.home { left: 13px; top: 31.11px; }
+.about_us { left: 640px; top: 31.11px; }
+.join_us { left: 747.56px; top: 31.11px; }
+.events { left: 855.11px; top: 31.11px; }
+.contact { left: 962.67px; top: 31.11px; }
+.projects { left: 1069.33px; top: 31.11px; }
+.donate { left: 1177.78px; top: 31.11px; }
+
+
+h1 {
+  text-align: center; 
+  margin-top: 20px; 
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }

@@ -1,0 +1,57 @@
+.main-header {
+    font-size: 47.22px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold; 
+    position: absolute;
+    left: 12.22px; 
+    top: 90.00px; 
+    width: 755.56px; 
+    height: 245.33px; 
+    text-align: center; 
+}
+
+.sub-header {
+    font-size: 26.67px;
+    font-family: 'Times New Roman', Times, serif;
+    
+    height: 270px;
+    position: absolute;
+    left: 12.22px; 
+    top: 225.00px; 
+    width: 755.56px;  
+    text-align: center; 
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+    background-color: #4A2E18; 
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 12px;
+}
+
+.about-us {
+    position: absolute;
+    left: 175.89px; 
+    top: 450.89px; 
+    width: 133.33px; 
+    height: 62.22px; 
+}
+
+.contact-us {
+    position: absolute;
+    left: 360.67px; 
+    top: 450.89px; 
+    width: 133.33px; 
+    height: 62.22px;
+}
+.slick-slider {
+    position: absolute !important;
+    left: 885.06px !important;
+    top: 100.56px !important;
+}
