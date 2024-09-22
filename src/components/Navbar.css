@@ -1,0 +1,43 @@
+.navbar {
+    background-color: #1D3557;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    width: 1300px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    position: relative; 
+    margin: 0 auto; 
+    border-bottom: 3px solid
+  }
+
+.nav-links {
+    list-style: none;
+    display: flex;
+  }
+
+.nav-links li {
+    margin-right: 20px;
+  }
+  
+.nav-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  
+.nav-links a:hover {
+    color: #457B9D;
+  }
+ 
+.home { left: 13px; top: 31.11px; }
+.about_us { left: 640px; top: 31.11px; }
+.join_us { left: 747.56px; top: 31.11px; }
+.events { left: 855.11px; top: 31.11px; }
+.contact { left: 962.67px; top: 31.11px; }
+.projects { left: 1069.33px; top: 31.11px; }
+.donate { left: 1177.78px; top: 31.11px; }  
+.cta-button {
+    background-color: #F4A261;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }  
