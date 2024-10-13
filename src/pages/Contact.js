@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Contact.css';
+import { FaInstagram, FaEnvelope, FaLinkedin } from 'react-icons/fa';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -11,6 +12,7 @@ const Contact = () => {
 
   const [formErrors, setFormErrors] = useState({});
   const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [submitError, setSubmitError] = useState('');
 
   const handleChange = (e) => {
     setFormData({
@@ -29,18 +31,40 @@ const Contact = () => {
     return errors;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const errors = validateForm();
     if (Object.keys(errors).length === 0) {
-      console.log('Form submitted:', formData);
-      setSubmitSuccess(true);
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-      });
+      try {
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            access_key: 'ea6d9746-ff80-486c-a89d-09e8d1290dc5', 
+            name: formData.name,
+            email: formData.email,
+            subject: formData.subject,
+            message: formData.message
+          })
+        });
+        if (response.ok) {
+          setSubmitSuccess(true);
+          setFormData({
+            name: '',
+            email: '',
+            subject: '',
+            message: ''
+          });
+          setFormErrors({});
+        } else {
+          throw new Error('Failed to send message');
+        }
+      } catch (error) {
+        setSubmitError('Error sending message. Please try again later.');
+        console.error(error);
+      }
     } else {
       setFormErrors(errors);
     }
@@ -48,18 +72,21 @@ const Contact = () => {
 
   return (
     <div className="contact-container">
-      <div className="contact-info">
-        <h1>Contact Us</h1>
-        <p>
-          E-mail: <a href="mailto:steminspires.volunteer@gmail.com">stem-inspires@gmail.com</a>
-        </p>
-        <p>
-          Instagram: <a href="https://www.instagram.com/stem.inspires">@stem_inspires</a><br />
-          Facebook: <a href="https://facebook.com/">STEM-Inspires</a>
-        </p>
-      </div>
       <div className="contact-form-container">
-        <h3>Having Questions or Feedback? We’d love to hear from you.</h3>
+        <h1>Contact Us</h1>
+        <div className="social-icons">
+          <a href="mailto:bookhubtindia@gmail.com" target="_blank" rel="noopener noreferrer">
+            <FaEnvelope />
+          </a>
+          <a href="https://instagram.com/bookk_hubbb" target="_blank" rel="noopener noreferrer">
+            <FaInstagram />
+          </a>
+          <a href="https://www.linkedin.com/company/bookhubt/mycompany/" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin />
+          </a>
+        </div>
+        <h3>Having Questions or Feedback?</h3>
+        <h4> We’d love to hear from you!</h4>
         <form onSubmit={handleSubmit} className="contact-form">
           <div className="form-group">
             <label htmlFor="name">Name</label>
@@ -107,9 +134,14 @@ const Contact = () => {
               required
             />
             {formErrors.message && <p className="error">{formErrors.message}</p>}
-          </div>
-          <button type="submit" className="submit-button">Submit</button>
-          {submitSuccess && <p className="success">Your message has been sent successfully!</p>}
+            </div>
+          <button type="submit" className="submit-button">Send Message</button>
+
+          {submitSuccess && (
+            <p style={{ color: 'green' }}>Thanks! Your response has been submitted.</p>
+          )}
+          
+          {submitError && <p className="error">{submitError}</p>}
         </form>
       </div>
     </div>

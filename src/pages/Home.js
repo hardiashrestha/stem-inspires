@@ -21,11 +21,10 @@ const Home = () => {
     };
 
     return (
-        <div style={{ paddingBottom: '60px' }}> {/* Additional padding for testing */}
+        <div style={{ paddingBottom: '60px' }}>
             <h1 className="main-header">WELCOME TO STEM-INSPIRES</h1>
             <p className="sub-header">STEM Inspires is a student-run non-profit organization that promotes STEM learning amongst youth from underrepresented and underserved communities, building the next generation of STEM-inspired individuals.</p>
 
-            {/* Slider Component */}
             <Slider {...settings} style={{ width: '475px', height: '480.22px', position: 'absolute', left: '885.06px', top: '100.56px' }}>
                 <div>
                     <img src={logo} alt="Home" style={{ width: '475px', height: '480.22px' }} />
@@ -41,11 +40,9 @@ const Home = () => {
                 </div>
             </Slider>
 
-            {/* Links */}
             <Link to="/about-us" className="button about-us">ABOUT US</Link>
             <Link to="/contact" className="button contact-us">CONTACT</Link>
 
-            
         </div>
     );
 };
