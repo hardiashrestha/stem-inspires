@@ -38,9 +38,9 @@ body {
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.social-icons a:hover {
+.social-icons :hover {
     color: #767694;
-    transform: scale(1.2); 
+    transforma: scale(1.2); 
 }
 
 .contact-form h3 {

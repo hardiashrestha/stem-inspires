@@ -75,13 +75,13 @@ const Contact = () => {
       <div className="contact-form-container">
         <h1>Contact Us</h1>
         <div className="social-icons">
-          <a href="mailto:bookhubtindia@gmail.com" target="_blank" rel="noopener noreferrer">
+          <a href="mailto:steminpires.volunteergmail.com" target="_blank" rel="noopener noreferrer">
             <FaEnvelope />
           </a>
-          <a href="https://instagram.com/bookk_hubbb" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/stem.inspires/" target="_blank" rel="noopener noreferrer">
             <FaInstagram />
           </a>
-          <a href="https://www.linkedin.com/company/bookhubt/mycompany/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/company/stem-inspires-nj" target="_blank" rel="noopener noreferrer">
             <FaLinkedin />
           </a>
         </div>

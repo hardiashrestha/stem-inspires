@@ -35,7 +35,10 @@
     text-decoration: none;
     border-radius: 12px;
 }
-
+.button:hover {
+    transform: scale(1.1); 
+    background-color: #767694 !important;
+  }
 .about-us {
     position: absolute;
     left: 175.89px; 

@@ -42,7 +42,12 @@
   justify-content: center;
   margin-right: 5px;
   position: absolute; 
-}  
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.button:hover {
+  transform: scale(1.1); 
+  background-color: #767694;
+}
 
 .home { left: 13px; top: 31.11px; }
 .about_us { left: 640px; top: 31.11px; }
