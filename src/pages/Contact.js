@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Contact.css';
-import { FaInstagram, FaEnvelope, FaLinkedin } from 'react-icons/fa';
+import { FaInstagram, FaEnvelope, FaLinkedin, FaDiscord } from 'react-icons/fa';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -83,6 +83,9 @@ const Contact = () => {
           </a>
           <a href="https://www.linkedin.com/company/stem-inspires-nj" target="_blank" rel="noopener noreferrer">
             <FaLinkedin />
+          </a>
+          <a href='https://discord.gg/Wd9MTkAd' target='_blank' rel='noopener noreferrer'>
+            <FaDiscord />
           </a>
         </div>
         <h3>Having Questions or Feedback?</h3>

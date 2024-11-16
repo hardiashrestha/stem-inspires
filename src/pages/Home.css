@@ -1,7 +1,10 @@
+body {
+    background-color: #E9ECFB;
+}
 .main-header {
     font-size: 47.22px;
     font-family: 'Times New Roman', Times, serif;
-    color: #2F3E8C;
+    color: #0E4DA2;
     font-weight: bold; 
     position: absolute;
     left: 12.22px; 
@@ -14,7 +17,7 @@
 .sub-header {
     font-size: 26.67px;
     font-family: 'Times New Roman', Times, serif;
-    color: #F8A830;
+    color: #B48ED8;
     height: 270px;
     position: absolute;
     left: 12.22px; 
@@ -28,7 +31,7 @@
     align-items: center;
     font-family: 'Times New Roman', Times, serif;
     justify-content: center;
-    background-color: #F8A830 !important; /* Change button background color */
+    background-color: #B48ED8 !important; /* Change button background color */
     color: white !important; /* Ensure text color is white */
     text-transform: uppercase;
     font-size: 14px;
@@ -57,6 +60,6 @@
 
 .slick-slider {
     position: absolute !important;
-    left: 885.06px !important;
+    left: 855.06px !important;
     top: 100.56px !important;
 }
