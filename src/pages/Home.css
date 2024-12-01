@@ -1,5 +1,6 @@
 body {
     background-color: #E9ECFB;
+    overflow-x: hidden !important;
 }
 .main-header {
     font-size: 47.22px;
