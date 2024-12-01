@@ -34,7 +34,7 @@ body {
 }
 
 .social-icons a {
-    color: #ff9f56;
+    color: #69B2D2;
     font-size: 24px;
     transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -76,7 +76,7 @@ body {
 }
 
 .submit-button {
-    background-color: #4A2E18;
+    background-color: #69B2D2;
     color: #FFFFFF;
 }
 
