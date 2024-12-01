@@ -1,86 +1,87 @@
 import React from 'react';
 import './AboutUs.css'; // Import the CSS file for styling
-
+import image1 from '../assets/image1.png';
+import image2 from '../assets/image2.png';
+import image3 from '../assets/image3.png';
 const teamMembers = [
     {
         name: 'Founder 1',
         role: 'Co-Founder',
         description: 'Founder 1 has extensive experience in STEM education and community outreach.',
-        image: 'path/to/founder1.jpg', // Replace with actual image path
+        image: image1, // Replace with actual image path
     },
     {
         name: 'Founder 2',
         role: 'Co-Founder',
         description: 'Founder 2 is passionate about inspiring youth through innovative programs.',
-        image: 'path/to/founder2.jpg', // Replace with actual image path
+        image: image1, // Replace with actual image path
     },
     {
         name: 'Founder 3',
         role: 'Co-Founder',
         description: 'Founder 3 has a background in engineering and education.',
-        image: 'path/to/founder3.jpg', // Replace with actual image path
+        image: image1, 
     },
-    // Media Team Members
     {
         name: 'Media Member 1',
         role: 'Media Team',
         description: 'Media Member 1 creates engaging content for our social media platforms.',
-        image: 'path/to/media1.jpg', // Replace with actual image path
+        image: image2, // Replace with actual image path
     },
     {
         name: 'Media Member 2',
         role: 'Media Team',
         description: 'Media Member 2 manages our visual branding and marketing materials.',
-        image: 'path/to/media2.jpg', // Replace with actual image path
+        image: image2, // Replace with actual image path
     },
     {
         name: 'Media Member 3',
         role: 'Media Team',
         description: 'Media Member 3 specializes in photography and videography.',
-        image: 'path/to/media3.jpg', // Replace with actual image path
+        image: image2, // Replace with actual image path
     },
     {
         name: 'Media Member 4',
         role: 'Media Team',
         description: 'Media Member 4 is responsible for editing and producing videos.',
-        image: 'path/to/media4.jpg', // Replace with actual image path
+        image: image2, // Replace with actual image path
     },
     {
         name: 'Media Member 5',
         role: 'Media Team',
         description: 'Media Member 5 assists in content creation and strategy.',
-        image: 'path/to/media5.jpg', // Replace with actual image path
+        image: image2, // Replace with actual image path
     },
     {
         name: 'Media Member 6',
         role: 'Media Team',
         description: 'Media Member 6 handles our online presence and engagement.',
-        image: 'path/to/media6.jpg', // Replace with actual image path
+        image: image2, // Replace with actual image path
     },
     // Events Team Members
     {
         name: 'Events Member 1',
         role: 'Events Team',
         description: 'Events Member 1 coordinates our community outreach programs.',
-        image: 'path/to/events1.jpg', // Replace with actual image path
+        image: image3, // Replace with actual image path
     },
     {
         name: 'Events Member 2',
         role: 'Events Team',
         description: 'Events Member 2 helps organize workshops and events.',
-        image: 'path/to/events2.jpg', // Replace with actual image path
+        image: image3, // Replace with actual image path
     },
     {
         name: 'Events Member 3',
         role: 'Events Team',
         description: 'Events Member 3 manages logistics for our events.',
-        image: 'path/to/events3.jpg', // Replace with actual image path
+        image: image3, // Replace with actual image path
     },
     {
         name: 'Events Member 4',
         role: 'Events Team',
         description: 'Events Member 4 engages with participants to ensure a great experience.',
-        image: 'path/to/events4.jpg', // Replace with actual image path
+        image: image3, // Replace with actual image path
     }
 ];
 
