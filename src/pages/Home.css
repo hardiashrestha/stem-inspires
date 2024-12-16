@@ -16,6 +16,8 @@
 /* Increased font sizes for headers and buttons on homepage */
 .main-header {
     font-size: 35px; /* Increased header size */
+    text-decoration: #B48ED8;
+    text-decoration: underline #B48ED8;
     font-family: 'Times New Roman', Times, serif;
     margin-top: 20px; /* Add margin to move it down slightly */
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
@@ -26,6 +28,8 @@
 .sub-header {
     font-size: 20px; /* Increased sub-header size */
     font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    text-decoration-color: #B48ED8;
     line-height: 1.6; 
     margin-top: 10px; /* Add margin to move it down slightly */
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 
