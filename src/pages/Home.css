@@ -1,66 +1,93 @@
-body {
-    background-color: #E9ECFB;
-    overflow-x: hidden !important;
+.home-container {
+    padding: 20px; /* General padding for home container */
+    position: relative; /* Position relative for absolute children */
+    overflow: hidden; /* Hide overflow */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the top */
+    align-items: center; /* Center content horizontally */
+    color: white; /* Text color for better visibility against background */
+    text-align: center; /* Center align text */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the images */
 }
+
+/* Increased font sizes for headers and buttons on homepage */
 .main-header {
-    font-size: 47.22px;
+    font-size: 35px; /* Increased header size */
     font-family: 'Times New Roman', Times, serif;
-    color: #0E4DA2;
-    font-weight: bold; 
-    position: absolute;
-    left: 12.22px; 
-    top: 90.00px; 
-    width: 755.56px; 
-    height: 245.33px; 
-    text-align: center; 
+    margin-top: 20px; /* Add margin to move it down slightly */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
+                 0 0 20px rgba(255, 255, 255, 0.6), 
+                 0 0 30px rgba(255, 255, 255, 0.4);
 }
 
 .sub-header {
-    font-size: 26.67px;
+    font-size: 20px; /* Increased sub-header size */
     font-family: 'Times New Roman', Times, serif;
-    color: #B48ED8;
-    height: 270px;
-    position: absolute;
-    left: 12.22px; 
-    top: 225.00px; 
-    width: 755.56px;  
-    text-align: center; 
+    line-height: 1.6; 
+    margin-top: 10px; /* Add margin to move it down slightly */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 
+                 0 0 10px rgba(255, 255, 255, 0.6);
 }
 
-.button {
+/* Specific styles for homepage buttons only */
+.home-button {
     display: flex;
     align-items: center;
     font-family: 'Times New Roman', Times, serif;
     justify-content: center;
-    background-color: #B48ED8 !important; /* Change button background color */
-    color: white !important; /* Ensure text color is white */
+    background-color: #B48ED8; /* Semi-transparent background for buttons */
+    color: white;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 18px; /* Increased button font size for homepage buttons */
     text-decoration: none;
     border-radius: 12px;
-}
-.button:hover {
-    transform: scale(1.1); 
-    background-color: #767694 !important;
-  }
-.about-us {
-    position: absolute;
-    left: 175.89px; 
-    top: 450.89px; 
-    width: 133.33px; 
-    height: 62.22px; 
+    padding: 15px 30px; /* Added padding for larger button area */
+    
+   /* Adjusted margin to create space between buttons */
+   margin-bottom: 10px; /* Space below each button */
+
+   transition: background-color 0.3s ease;
+   box-shadow: 
+       -2px -2px 5px rgba(255,255,255,0.8), 
+       inset -2px -2px 5px rgba(255,255,255,0.4);
 }
 
-.contact-us {
-    position: absolute;
-    left: 360.67px; 
-    top: 450.89px; 
-    width: 133.33px; 
-    height: 62.22px;
+.home-button:hover {
+   background-color: #B48ED8; /* Darken button on hover for feedback */
 }
 
-.slick-slider {
-    position: absolute !important;
-    left: 855.06px !important;
-    top: 100.56px !important;
+.button-container {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically for consistent spacing */
+    align-items: center; /* Center buttons horizontally in container */
+}
+
+.button-container .home-button:not(:last-child) {
+   margin-bottom: 10px; /* Space between buttons (only apply to non-last button) */
+}
+
+/* Navbar button styles (ensure these are defined separately) */
+.navbar .button {
+   font-size: 14px; /* Normal size for navbar buttons */
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    box-shadow: 
+       -2px -2px 5px rgba(255,255,255,0.8), 
+       inset -2px -2px 5px rgba(255,255,255,0.4);
+}
+.social-icons a {
+    color: #4A2E18;
+    font-size: 24px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.social-icons a:hover {
+    color: #3B2412;
+    transform: scale(1.2); 
 }
