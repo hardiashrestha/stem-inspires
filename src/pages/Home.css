@@ -15,6 +15,7 @@
 
 /* Increased font sizes for headers and buttons on homepage */
 .main-header {
+    color: #B48ED8;
     font-size: 35px; /* Increased header size */
     text-decoration: #B48ED8;
     text-decoration: underline #B48ED8;
