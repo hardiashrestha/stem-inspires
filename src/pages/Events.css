@@ -2,10 +2,10 @@ body {
     margin: 0; 
     padding: 0;
     background-color: #0E4DA2;  
-  }
+}
+
 .events-container {
     padding: 40px;
-    
 }
 
 .main-heading {
@@ -49,8 +49,40 @@ body {
    background-color:#6F4E37;
 }
 
+/* Image Styling */
+.slider-image {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 300px; /* Set a max height for uniformity */
+    object-fit: cover; /* Cover the area without distortion */
+}
+
+/* Media Queries for Mobile Optimization */
 @media (max-width: 768px) {
+   .events-container {
+       padding: 20px; /* Reduced padding for mobile */
+   }
+
+   .main-heading {
+       font-size: 32px; /* Smaller heading size */
+       margin-bottom: 20px; /* Adjusted margin */
+   }
+
    .event-card {
-       width: calc(100% - 10px); 
+       width: calc(100% - 20px); /* Full width on mobile */
+       padding: 10px; /* Reduced padding */
+   }
+
+   .event-card-title {
+       font-size: 18px; /* Smaller title size */
+   }
+
+   .event-card-description {
+       font-size: 14px; /* Smaller description size */
+   }
+
+   .more-info-button {
+       padding: 8px 12px; /* Smaller button size */
+       font-size: 14px; /* Adjusted font size */
    }
 }
