@@ -29,7 +29,7 @@ const Navbar = () => {
                 <Link to='/join-us' className='button join_us'>JOIN US</Link>
                 <Link to='/events' className='button events'>EVENTS</Link>
                 <Link to='/contact' className='button contact'>CONTACT</Link>
-                <Link to='/projects' className='button projects'>PROJECTS</Link>
+                <Link to='/projects' className='button projects'>STEM TALK</Link>
                 <Link to='/donate' className='button donate'>DONATE</Link>
             </div>
             <div className='hamburger' onClick={() => setIsMenuOpen(!isMenuOpen)}>
