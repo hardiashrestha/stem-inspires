@@ -1,9 +1,11 @@
+body{
+    background-color: #E9ECFB !important;
+}
 .joinus-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px;
-    background-color: #ffffff; 
+    padding: 40px; 
 }
 
 .joinus-form-container {
